@@ -27,12 +27,6 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 
-  <!-- JS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="js/script-o-matic.js"></script>
-
 </head>
 
 <body>
@@ -42,99 +36,98 @@
   <div class="container">
     <div class="row">
       <div class="one-column">
+
         <!-- Header
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
         <header>
-          <h1>Script-o-Matic 3000</h1>
+          <h1>Script-o-Matic 3000&trade;&reg;</h1>
         </header>
 
         <!-- Overview
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <section class="overview">
-          <h2>Overview</h2>
-          <h3>Introduction</h3>
-          <p class="script">Hi. This iPad is a learning device for people like you who may be interested in participating in clinical research studies. Over the next several minutes, this video will explain the details of a study you’re being invited to take part in, and
-            help you make a decision about whether you’d like to participate in the study. You’ll learn about your rights and responsibilities, the required study procedures, and the possible risks and benefits of your participation.</p>
 
-          <p class="question">
-            Will participants be required to take a knowledge review as a part of the informed consent process?
-            <form>
-              <input type="radio" name="kr" value="yes">Yes
-              <input type="radio" name="kr" value="no">No
-          </p>
-<div id="content">
-  <textarea>How about it</textarea><br />
-  <textarea>111111
-222222
-333333
-444444
-555555
-666666</textarea>
-</div>
-
-<script type="text/javascript">$('#content').on('change keyup keydown paste cut', 'textarea', function () {
-$(this).height(0).height(this.scrollHeight);
-}).find('textarea').change();
-</script>
-
-
-
-          <h3>Sponsor</h3>
-          <p class="script">
-            This research study is sponsored by
-            <input type="text" name="study-sponsor" placeholder="name of study sponsor">.
-
-            <h3>Diagnosis</h3>
-            <p class="script">You’re being invited to take part in this study because</p>
-            <input type="text" name="diagnosis" placeholder="you have been diagnosed with cystic fibrosis">.
-
-            <h3>Purpose</h3>
-            <p class="script">The purpose of this study is to
-              <input type="text" name="purpose" placeholder="find out about the potential benefits and risks of dectixeze
-              as an add-on treatment for cystic fibrosis."></p>
-
-            <h3>Drug Description</h3>
-            <p class="script"><input type="text" name="drug-description" placeholder="Dectixeze is an “investigational drug”,
-              which means that it is being researched for FDA approval. This drug is not yet for sale in the United States."></p>
-
-            <h3>Participants</h3>
-            <p class="script">About <input type="number" name="participants" placeholder="330"> people will take part in this study <input type="text" name="location" placeholder="in the United States."> </p>
-
-            <h3>Randomization</h3>
-            <p class="script">This study is a randomized trial, meaning that you will be assigned by chance to one of
-              <input type="number" name="treatment-groups" placeholder="2"> treatment groups. In other words, you will have a
-              <input type="number" name="percentage" placeholder="50">% chance of being assigned to any/either of the treatment groups. Everyone will receive <input type="text" name="drug-name" placeholder="dectixeze"> or a placebo. A placebo looks exactly
-              like the study drug but has no active medicine in it. Neither you nor the study doctor will know which treatment group you are in. </p>
-
-            <h3>Voluntary Participation</h3>
-            <p class="script">You may decide to stop your participation at any time. If you decide to stop your participation, your relationship with your doctor and any treatment that you receive outside of the study will not be affected.</p>
+        <section class="introduction">
+          <h2>How to use the Script-o-Matic</h2>
+          <p>This tool will allow you to create a complete script for your custom clinical trial educational video.</p>
+          <ol>
+            <li>Watch a <a href="#">sample video</a> and read through the sample script below.</li>
+            <li>Answer the questions and fill in appropriate text.</li>
+            <li>Preview your script to make sure it's exactly to your specifications.</li>
+          </ol>
         </section>
 
-        <!-- Informed Consent
+        <main>
+
+          <!-- Overview
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <section class="informed-consent">
-          <h3>Informed Consent Form</h3>
-          <p class="script">In order to enter this study, you have to sign a document called the “informed consent form”. By signing this document, you are saying that you understand the risks and benefits of this study and that you’d like to volunteer to take part in
-            this study. This iPad will allow you to read the entire informed consent form and to sign it. A copy of the form, with your signature and the signature of the study doctor or a study staff member, will be given to you at the end of this process.
-            At any time, you may ask the study doctor or one of the study staff members any questions you might have.</p>
+          <section class="overview">
+            <h2>Overview</h2>
+            <h3>Introduction</h3>
+            <p class="script">Hi. This iPad is a learning device for people like you who may be interested in participating in clinical research studies. Over the next several minutes, this video will explain the details of a study you’re being invited to take part in,
+              and help you make a decision about whether you’d like to participate in the study. You’ll learn about your rights and responsibilities, the required study procedures, and the possible risks and benefits of your participation.</p>
 
-          <p class="question">
-            Will participants be asked to enroll in a sub-study?
-            <input type="radio" name="sub-study" value="yes">Yes
-            <input type="radio" name="sub-study" value="no">No
-          </p>
-        </section>
+            <p class="question">
+              Will participants be required to take a knowledge review as a part of the informed consent process?
+              <form>
+                <input type="radio" name="kr" value="yes">Yes
+                <input type="radio" name="kr" value="no">No
+            </p>
 
-        <section class="procedure">
-          <h3>Length of Participation</h3>
-          <p class="script">If you decide you want to be in this study, your participation will last <input type="text" name="participation-length" placeholder="about eighteen weeks">.</p>
-          <h3>Timeline(s)</h3>
-          <p class="script">You will visit the study clinic <input type="text" name="visits" placeholder="every one to two weeks for the length of your participation. You will return to the clinic for a follow-up visit two weeks after the study is over."></p>
-          <h3>How to Take the Drug</h3>
-          <p class="script">You’ll take the study drug
-            <textarea name="taking-drug">each time you visit the study clinic.</textarea></p>
-        </section>
+            <h3>Sponsor</h3>
+            <p class="script">
+              This research study is sponsored by
+              <input type="text" name="study-sponsor" placeholder="name of study sponsor">.
+
+              <h3>Diagnosis</h3>
+              <p class="script">You’re being invited to take part in this study because
+                <textarea name="diagnosis" placeholder="you have been diagnosed with cystic fibrosis"></textarea>.</p>
+
+              <h3>Purpose</h3>
+              <p class="script">The purpose of this study is to
+                <textarea name="purpose" placeholder="find out about the potential benefits and risks of dectixeze as an add-on treatment for cystic fibrosis"></textarea>.</p>
+
+              <h3>Drug Description</h3>
+              <p class="script"><textarea name="drug-description" placeholder="Dectixeze is an “investigational drug”, which means that it is being researched for FDA approval. This drug is not yet for sale in the United States."></textarea></p>
+
+              <h3>Participants</h3>
+              <p class="script">About <input type="number" name="participants" placeholder="330"> people will take part in this study <input type="text" name="location" placeholder="in the United States."> </p>
+
+              <h3>Randomization</h3>
+              <p class="script">This study is a randomized trial, meaning that you will be assigned by chance to one of <input type="number" name="treatment-groups" placeholder="2"> treatment groups. In other words, you will have a <input type="number" name="percentage" placeholder="50">% chance of being assigned to any/either of the treatment groups. Everyone will receive <input type="text" name="drug-name" placeholder="dectixeze"> or a placebo. A placebo looks exactly like the study drug but has no active medicine in it. Neither you nor the study doctor will know which treatment group you are in. </p>
+
+              <h3>Voluntary Participation</h3>
+              <p class="script">You may decide to stop your participation at any time. If you decide to stop your participation, your relationship with your doctor and any treatment that you receive outside of the study will not be affected.</p>
+          </section>
+
+          <!-- Informed Consent
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+          <section class="informed-consent">
+            <h3>Informed Consent Form</h3>
+            <p class="script">In order to enter this study, you have to sign a document called the “informed consent form”. By signing this document, you are saying that you understand the risks and benefits of this study and that you’d like to volunteer to take part in
+              this study. This iPad will allow you to read the entire informed consent form and to sign it. A copy of the form, with your signature and the signature of the study doctor or a study staff member, will be given to you at the end of this
+              process. At any time, you may ask the study doctor or one of the study staff members any questions you might have.</p>
+
+            <p class="question">
+              Will participants be asked to enroll in a sub-study?
+              <input type="radio" name="sub-study" value="yes">Yes
+              <input type="radio" name="sub-study" value="no">No
+            </p>
+          </section>
+
+          <section class="procedure">
+            <h3>Length of Participation</h3>
+            <p class="script">If you decide you want to be in this study, your participation will last <input type="text" name="participation-length" placeholder="about eighteen weeks">.</p>
+            <h3>Timeline(s)</h3>
+            <p class="script">You will visit the study clinic <input type="text" name="visits" placeholder="every one to two weeks for the length of your participation. You will return to the clinic for a follow-up visit two weeks after the study is over."></p>
+            <h3>How to Take the Drug</h3>
+            <p class="script">You’ll take the study drug
+              <textarea name="taking-drug" placeholder="each time you visit the study clinic"></textarea>.</p>
+          </section>
+
+          <input type="submit" value="Preview your Script">
+        </form>
+
+        </main>
 
       </div>
     </div>
@@ -142,6 +135,12 @@ $(this).height(0).height(this.scrollHeight);
 
   <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/script-o-matic.js"></script>
 </body>
 
 </html>
