@@ -16,7 +16,7 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700" rel="stylesheet">
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -47,7 +47,7 @@
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
         <section class="introduction">
-          <h2>How to use the Script-o-Matic</h2>
+          <h2 class="introheadline">How to use the Script-o-Matic</h2>
           <p>This tool will allow you to create a complete script for your custom clinical trial educational video.</p>
           <ol>
             <li>Watch a <a href="#">sample video</a> and read through the sample script below.</li>
@@ -58,75 +58,101 @@
 
         <main>
 
-          <!-- Overview
+          <form>
+
+            <!-- SupaStar
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-          <section class="overview">
-            <h2>Overview</h2>
-            <h3>Introduction</h3>
-            <p class="script">Hi. This iPad is a learning device for people like you who may be interested in participating in clinical research studies. Over the next several minutes, this video will explain the details of a study you’re being invited to take part in,
-              and help you make a decision about whether you’d like to participate in the study. You’ll learn about your rights and responsibilities, the required study procedures, and the possible risks and benefits of your participation.</p>
 
-            <p class="question">
-              Will participants be required to take a knowledge review as a part of the informed consent process?
-              <form>
-                <input type="radio" name="kr" value="yes">Yes
-                <input type="radio" name="kr" value="no">No
-            </p>
-
-            <h3>Sponsor</h3>
-            <p class="script">
-              This research study is sponsored by
-              <input type="text" name="study-sponsor" placeholder="name of study sponsor">.
-
-              <h3>Diagnosis</h3>
-              <p class="script">You’re being invited to take part in this study because
-                <textarea name="diagnosis" placeholder="you have been diagnosed with cystic fibrosis"></textarea>.</p>
-
-              <h3>Purpose</h3>
-              <p class="script">The purpose of this study is to
-                <textarea name="purpose" placeholder="find out about the potential benefits and risks of dectixeze as an add-on treatment for cystic fibrosis"></textarea>.</p>
-
-              <h3>Drug Description</h3>
-              <p class="script"><textarea name="drug-description" placeholder="Dectixeze is an “investigational drug”, which means that it is being researched for FDA approval. This drug is not yet for sale in the United States."></textarea></p>
-
-              <h3>Participants</h3>
-              <p class="script">About <input type="number" name="participants" placeholder="330"> people will take part in this study <input type="text" name="location" placeholder="in the United States."> </p>
-
-              <h3>Randomization</h3>
-              <p class="script">This study is a randomized trial, meaning that you will be assigned by chance to one of <input type="number" name="treatment-groups" placeholder="2"> treatment groups. In other words, you will have a <input type="number" name="percentage" placeholder="50">% chance of being assigned to any/either of the treatment groups. Everyone will receive <input type="text" name="drug-name" placeholder="dectixeze"> or a placebo. A placebo looks exactly like the study drug but has no active medicine in it. Neither you nor the study doctor will know which treatment group you are in. </p>
-
-              <h3>Voluntary Participation</h3>
-              <p class="script">You may decide to stop your participation at any time. If you decide to stop your participation, your relationship with your doctor and any treatment that you receive outside of the study will not be affected.</p>
-          </section>
-
-          <!-- Informed Consent
+            <section class="supastars">
+              <h2>Choose your Doctor</h2>
+              <div class="ss-selection-wrapper">
+                <div class="ss-selection">
+                  <input type="radio" name="doctor" value="dr-light">
+                  <img src="images/dr-light.png" alt="Light-skinned doctor" />
+                </div>
+                <div class="ss-selection">
+                  <input type="radio" name="doctor" value="dr-med">
+                  <img src="images/dr-med.png" alt="Medium-skinned doctor" />
+                </div>
+                <div class="ss-selection">
+                  <input type="radio" name="doctor" value="dr-dk">
+                  <img src="images/dr-dk.png" alt="Dark-skinned doctor" />
+                </div>
+              </div>
+            </section>
+            <!-- Overview
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-          <section class="informed-consent">
-            <h2>Informed Consent</h2>
-            <h3>Informed Consent Form</h3>
-            <p class="script">In order to enter this study, you have to sign a document called the “informed consent form”. By signing this document, you are saying that you understand the risks and benefits of this study and that you’d like to volunteer to take part in
-              this study. This iPad will allow you to read the entire informed consent form and to sign it. A copy of the form, with your signature and the signature of the study doctor or a study staff member, will be given to you at the end of this
-              process. At any time, you may ask the study doctor or one of the study staff members any questions you might have.</p>
+            <section class="overview">
+              <h2>Overview</h2>
+              <h3>Introduction</h3>
+              <p class="script">Hi. This iPad is a learning device for people like you who may be interested in participating in clinical research studies. Over the next several minutes, this video will explain the details of a study you’re being invited to take part in,
+                and help you make a decision about whether you’d like to participate in the study. You’ll learn about your rights and responsibilities, the required study procedures, and the possible risks and benefits of your participation.</p>
 
-            <p class="question">
-              Will participants be asked to enroll in a sub-study?<br>
-              <input type="radio" name="sub-study" value="yes">Yes
-              <input type="radio" name="sub-study" value="no">No
-            </p>
-          </section>
+              <div class="question">
+                <p>
+                  Will participants be required to take a knowledge review as a part of the informed consent process?
+                  <input type="radio" name="kr" value="yes">Yes
+                  <input type="radio" name="kr" value="no">No
+                </p>
+              </div>
 
-          <section class="procedure">
-            <h3>Length of Participation</h3>
-            <p class="script">If you decide you want to be in this study, your participation will last <input type="text" name="participation-length" placeholder="about eighteen weeks">.</p>
-            <h3>Timeline(s)</h3>
-            <p class="script">You will visit the study clinic <textarea name="visits" placeholder="every one to two weeks for the length of your participation. You will return to the clinic for a follow-up visit two weeks after the study is over."></textarea></p>
-            <h3>How to Take the Drug</h3>
-            <p class="script">You’ll take the study drug
-              <textarea name="taking-drug" placeholder="each time you visit the study clinic"></textarea>.</p>
-          </section>
+              <h3>Sponsor</h3>
+              <p class="script">
+                This research study is sponsored by
+                <input type="text" name="study-sponsor" placeholder="name of study sponsor">.
 
-          <input type="submit" value="Preview your Script">
-        </form>
+                <h3>Diagnosis</h3>
+                <p class="script">You’re being invited to take part in this study because
+                  <textarea name="diagnosis" placeholder="you have been diagnosed with cystic fibrosis"></textarea>.</p>
+
+                <h3>Purpose</h3>
+                <p class="script">The purpose of this study is to
+                  <textarea name="purpose" placeholder="find out about the potential benefits and risks of dectixeze as an add-on treatment for cystic fibrosis"></textarea>.</p>
+
+                <h3>Drug Description</h3>
+                <p class="script"><textarea name="drug-description" placeholder="Dectixeze is an “investigational drug”, which means that it is being researched for FDA approval. This drug is not yet for sale in the United States."></textarea></p>
+
+                <h3>Participants</h3>
+                <p class="script">About <input type="number" name="participants" placeholder="330"> people will take part in this study <input type="text" name="location" placeholder="in the United States."> </p>
+
+                <h3>Randomization</h3>
+                <p class="script">This study is a randomized trial, meaning that you will be assigned by chance to one of <input type="number" name="treatment-groups" placeholder="2"> treatment groups. In other words, you will have a <input type="number" name="percentage"
+                    placeholder="50">% chance of being assigned to any/either of the treatment groups. Everyone will receive <input type="text" name="drug-name" placeholder="dectixeze"> or a placebo. A placebo looks exactly like the study drug but has no
+                  active medicine in it. Neither you nor the study doctor will know which treatment group you are in. </p>
+
+                <h3>Voluntary Participation</h3>
+                <p class="script">You may decide to stop your participation at any time. If you decide to stop your participation, your relationship with your doctor and any treatment that you receive outside of the study will not be affected.</p>
+            </section>
+
+            <!-- Informed Consent
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+            <section class="informed-consent">
+              <h2>Informed Consent</h2>
+              <h3>Informed Consent Form</h3>
+              <p class="script">In order to enter this study, you have to sign a document called the “informed consent form”. By signing this document, you are saying that you understand the risks and benefits of this study and that you’d like to volunteer to take part
+                in this study. This iPad will allow you to read the entire informed consent form and to sign it. A copy of the form, with your signature and the signature of the study doctor or a study staff member, will be given to you at the end of
+                this process. At any time, you may ask the study doctor or one of the study staff members any questions you might have.</p>
+
+              <div class="question">
+                <p>
+                  Will participants be asked to enroll in a sub-study?</p>
+                <input type="radio" name="sub-study" value="yes">Yes
+                <input type="radio" name="sub-study" value="no">No
+              </div>
+            </section>
+
+            <section class="procedure">
+              <h3>Length of Participation</h3>
+              <p class="script">If you decide you want to be in this study, your participation will last <input type="text" name="participation-length" placeholder="about eighteen weeks">.</p>
+              <h3>Timeline(s)</h3>
+              <p class="script">You will visit the study clinic <textarea name="visits" placeholder="every one to two weeks for the length of your participation. You will return to the clinic for a follow-up visit two weeks after the study is over."></textarea></p>
+              <h3>How to Take the Drug</h3>
+              <p class="script">You’ll take the study drug
+                <textarea name="taking-drug" placeholder="each time you visit the study clinic"></textarea>.</p>
+            </section>
+
+            <input type="submit" value="Preview your Script">
+          </form>
 
         </main>
 
