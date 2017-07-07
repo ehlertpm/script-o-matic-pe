@@ -171,7 +171,7 @@ html {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   font-size: 1.5em;
   font-weight: 400;
   /* currently ems cause chrome bug misinterpreting rems on body element */
@@ -196,6 +196,22 @@ header h3, p {
 
 .instructions {
   padding: 5% 5% 0 5%;
+}
+
+.image-upload {
+  width: 46%;
+  height: 300px;
+  margin: 0 auto 0 auto;
+  background-color: #eee;
+  border: 1px solid #1eaedb;
+  text-align: center;
+  padding: 4%;
+}
+
+.drag {
+  text-align: center;
+  position: relative;
+  top: 45%;
 }
 
 img {
@@ -233,7 +249,7 @@ main {
 .question {
   margin-bottom: 5%;
   padding: 5% 5% 1% 5%;
-  background-color: #f1be4b;
+  background-color: #fff;
 }
 
 .submit {
@@ -431,11 +447,11 @@ input[type='checkbox'], input[type='radio'] {
 
 /* spacing for yes/no radio buttons */
 
-input[value='yes'] {
+input[value='yes'], input[value='male'] {
   margin-right: 3%;
 }
 
-input[value='no'] {
+input[value='no'], input[value='female'] {
   margin: 0 3% 0 3%;
 }
 
