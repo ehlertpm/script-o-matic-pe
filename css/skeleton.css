@@ -402,7 +402,7 @@ input[type='email'], input[type='search'], input[type='text'], input[type='tel']
   width: 50%;
   height: 100%;
   padding: 1%;
-  border: 1px solid white;
+  border: 1px solid #ddd;
   background-color: #fff;
   box-shadow: none;
 }
@@ -425,7 +425,7 @@ input[type='email']:focus, input[type='number']:focus, input[type='search']:focu
 textarea {
   width: 90%;
   padding: 1%;
-  border: 1px solid white;
+  border: 1px solid #ddd;
   background-color: #fff;
 }
 
