@@ -208,6 +208,11 @@ header h3, p {
   padding: 4%;
 }
 
+.study-logo, .study-drug {
+  width: 50%;
+  margin: 4% auto 4% auto;
+}
+
 .drag {
   text-align: center;
   position: relative;
@@ -237,6 +242,12 @@ img {
   text-align: center;
 }
 
+.ss-selection-wrapper-script {
+  text-align: center;
+  display: table-cell;
+  width: 50%;
+}
+
 input[name='doctor'] {
   display: block;
 }
@@ -263,7 +274,7 @@ main {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
   margin-top: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 1.8rem;
 }
 
 h1 {
@@ -291,6 +302,7 @@ h4 {
   font-size: 1.5rem;
   line-height: 1.35;
   font-weight: 700;
+  text-align: left;
 }
 
 h5 {
@@ -336,11 +348,11 @@ p {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 a {
-  color: #1eaedb;
+  color: #898989;
 }
 
 a:hover {
-  color: #0fa0ce;
+  color: #5EA8E6;
 }
 
 .add {
@@ -359,7 +371,7 @@ i {
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.button, button, input[type='submit'], input[type='reset'], input[type='button'] {
+.button, .button-red, button, input[type='submit'], input[type='reset'], input[type='button'] {
   font-size: 11px;
   font-weight: 600;
   line-height: 38px;
@@ -376,12 +388,24 @@ i {
   color: #002855;
   border: 1px solid #002855;
   background-color: transparent;
+  width: 30%;
+}
+
+.button-red {
+  background-color: #F66662;
+  color: white;
+  border: 1px solid #F66662;
+  margin-bottom: 4%;
 }
 
 .button:hover, button:hover, input[type='submit']:hover, input[type='reset']:hover, input[type='button']:hover, .button:focus, button:focus, input[type='submit']:focus, input[type='reset']:focus, input[type='button']:focus {
   color: #333;
   border-color: #888;
   outline: 0;
+}
+
+.button-red:hover {
+  color: #eee;
 }
 
 .button.button-primary, button.button-primary, input[type='submit'].button-primary, input[type='reset'].button-primary, input[type='button'].button-primary {
@@ -430,6 +454,7 @@ textarea {
   padding: 1%;
   border: 1px solid #ddd;
   background-color: #fff;
+  margin-top: 1%;
 }
 
 label, legend {
