@@ -45,9 +45,9 @@
           <h1>Vide-o-Magic 3000</h1>
 
           <div class="question">
-            <h3>Instructions</h3>
+            <h4>Instructions</h4>
             <p>Fill out this form to the best of your knowledge. If you're not sure about a response, leave the field blank and contact your client services representative. We'll use your responses to create a <a href="#">custom educational video</a> for
-              your study.
+              your study.</p>
           </div>
         </header>
 
@@ -63,12 +63,12 @@
 
             <div class="question">
               <section class="uploads">
-                <h3>Uploads</h3>
+                <h2>Uploads</h2>
                 <p>Upload a high resolution study logo image.</p>
                 <p>Acceptable file types are JPG, GIF, PNG, SVG and EPS. <i class="material-icons">help</i></p>
                 <div class="image-upload" />
-                <p class="drag">Drag an image here or <a href="#">browse</a> for an image to upload.</div>
-            </p>
+                <p class="drag">Drag an image here or <a href="#">browse</a> for an image to upload.</p>
+            </div>
             <p>Upload a photo of the study drug(s).</p>
             <div class="image-upload" />
             <p class="drag">Drag an image here or <a href="#">browse</a> for an image to upload.</p>
@@ -81,7 +81,7 @@
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
     <div class="question">
-      <h3>Character Selection</h3>
+      <h2>Character Selection</h2>
       <section class="supastars">
         <p>Select representative doctor and patient characters for your video.</p>
         <p>Doctor gender:</p>
@@ -110,11 +110,11 @@
         <div class="ss-selection-wrapper">
           <div class="ss-selection">
             <input type="radio" name="patient" value="patient-light">
-            <img src="images/patient-light.png" alt="Light-skinned patient" />
+            <img class="female" src="images/patient-light.png" alt="Light-skinned patient" />
           </div>
           <div class="ss-selection">
             <input type="radio" name="patient" value="patient-med">
-            <img src="images/patient-med.png" alt="Medium-skinned patient" />
+            <img class="female" src="images/patient-med.png" alt="Medium-skinned patient" />
           </div>
           <div class="ss-selection">
             <input type="radio" name="patient" value="patient-dk">
@@ -128,73 +128,72 @@
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
     <section class="script">
-      <h2>Video Script</h2>
 
       <!-- Overview
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
       <div class="question">
-        <h3>Introduction</h3>
+        <h2>Video Script</h2>
+        <h3>Overview</h3>
+        <h4>Introduction</h4>
         <p class="script">Hi. This iPad is a learning device for people like you who may be interested in participating in clinical research studies. Over the next several minutes, this video will explain the details of a study you’re being invited to take part in, and
           help you make a decision about whether you’d like to participate in the study. You’ll learn about your rights and responsibilities, the required study procedures, and the possible risks and benefits of your participation.</p>
 
-        <h3>Knowledge Review</h3>
+        <h4>Knowledge Review</h4>
         <p>
           Will participants be required to take a knowledge review as a part of the informed consent process?</p>
-        <input type="radio" name="kr" value="yes">Yes
-        <input type="radio" name="kr" value="no">No
-      </div>
+        <p><input type="radio" name="kr" value="yes">Yes
+        <input type="radio" name="kr" value="no">No</p>
 
-      <div class="question">
-        <h3>Sponsor</h3>
+
+        <h4>Sponsor</h4>
         <p class="script">
           This research study is sponsored by
           <input type="text" name="study-sponsor" placeholder="name of study sponsor">.</p>
-      </div>
 
-      <div class="question"><h3>Diagnosis</h3>
-      <p class="script">You’re being invited to take part in this study because
-        <textarea name="diagnosis" placeholder="you have been diagnosed with cystic fibrosis."></textarea></p></div>
 
-      <div class="question"><h3>Purpose</h3>
-      <p class="script">The purpose of this study is to
-        <textarea name="purpose" placeholder="find out about the potential benefits and risks of dectixeze as an add-on treatment for cystic fibrosis."></textarea></p></div>
+        <h4>Diagnosis</h4>
+        <p class="script">You’re being invited to take part in this study because
+          <textarea name="diagnosis" placeholder="you have been diagnosed with cystic fibrosis."></textarea></p>
 
-      <div class="question"><h3>Drug Description</h3>
-      <p class="script"><textarea name="drug-description" placeholder="Dectixeze is an “investigational drug”, which means that it is being researched for FDA approval. This drug is not yet for sale in the United States."></textarea></p></div>
+        <h4>Purpose</h4>
+        <p class="script">The purpose of this study is to
+          <textarea name="purpose" placeholder="find out about the potential benefits and risks of dectixeze as an add-on treatment for cystic fibrosis."></textarea></p>
 
-      <div class="question">
-        <h3>Participants</h3>
-        <p class="script">About</p>
-        <input type="number" name="participants" placeholder="330">participants will take part in this study in the
-        <select name="countries">
-                  <option value="united-states">United States</option>
+        <h4>Drug Description</h4>
+        <p class="script"><textarea name="drug-description" placeholder="Dectixeze is an “investigational drug”, which means that it is being researched for FDA approval. This drug is not yet for sale in the United States."></textarea></p>
+
+
+        <h4>Participants</h4>
+        <p class="script">About <input type="number" name="participants" placeholder="330"> participants will take part in this study in
+          <select name="countries">
+                  <option value="united-states">the United States</option>
                   <option value="india">India</option>
                   <option value="china">China</option>
                   <option value="uk">United Kingdom</option>
-                </select>
-        <a class="add" href="#"><i class="material-icons">add_circle</i></a>
-      </div>
+                </select> .
+          <a class="add" href="#"><i class="material-icons">add_circle</i></a>
 
-      <div class="question">
-        <h3>Randomization</h3>
-        <p class="script">How many treatment groups will be in this study? For example, if one drug is being studied alongside a placebo, select "2".</p><input type="number" name="treatment-groups" placeholder="2">
+          <h4>Randomization</h4>
+          <p class="script">How many treatment groups will be in this study? For example, if one drug is being studied alongside a placebo, select "2".</p><input type="number" name="treatment-groups" placeholder="2">
       </div>
     </section>
 
     <!-- Informed Consent
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-    <div class="question">
-      <h3>Sub-Study</h3>
-      <p>Will participants be asked to enroll in a sub-study?</p>
-      <input type="radio" name="sub-study" value="yes">Yes
-      <input type="radio" name="sub-study" value="no">No
-    </div>
+    <section class="informed-consent">
+      <div class="question">
+        <h3>Informed Consent</h3>
+        <h4>Sub-Study</h4>
+        <p>Will participants be asked to enroll in a sub-study?</p>
+        <input type="radio" name="sub-study" value="yes">Yes
+        <input type="radio" name="sub-study" value="no">No
+      </div>
     </section>
 
     <section class="procedure">
       <div class="question">
-        <h3>Length of Participation</h3>
+        <h4>Length of Participation</h4>
         <p class="script">For how long will volunteers participate in the study? </p>
         <textarea name="participation-length" placeholder="between twelve and eighteen weeks"></textarea>
       </div>
